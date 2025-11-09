@@ -24,10 +24,9 @@ jobs:                         # Задачи которые нужно выпо�
         python -m pip install --upgrade pip
         pip install pytest pylint
 
-    - name: Проверить код линтером
-      run: |
-        pylint src/ tests/
-
     - name: Запустить тесты
       run: |
         pytest tests/ -v
+    - name: Проверить код линтером
+      run: |
+        pylint src/ tests/
