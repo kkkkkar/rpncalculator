@@ -31,4 +31,4 @@ jobs:                         # Задачи которые нужно выпо�
 
     - name: Проверить код линтером
       run: |
-        pylint src/ tests/
+        pylint src/ tests/ --rcfile=.pylintrc
