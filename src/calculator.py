@@ -100,7 +100,7 @@ class Calculator:
                     if b == 0:
                         raise ValueError("Деление на ноль")
                     # ОШИБКА ТУТ
-                    result = a / b #должно быть a | b
+                    result = a + b #должно быть a | b
                 elif token == '^':
                     result = a ** b
                 elif token == '%':
