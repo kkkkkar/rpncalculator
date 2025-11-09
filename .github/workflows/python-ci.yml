@@ -1,9 +1,9 @@
 name: Python CI               # Название workflow
 on:                           # Когда запускать:
   push:                       # - при загрузке кода
-    branches: [ main ]        # - только для веток main
+    branches: [ master ]        # - только для веток master
   pull_request:               # - при создании PR
-    branches: [ main ]        # - только в main
+    branches: [ master ]        # - только в master
 
 jobs:                         # Задачи которые нужно выполнить
   test:                       # Задача "test"
